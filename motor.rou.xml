@@ -1,0 +1,24 @@
+<routes>
+    <vType id="ninja_lead" length="2.1" width="1.0" maxSpeed="40.0" 
+           vClass="motorcycle" guiShape="motorcycle" color="green"
+           
+           latAlignment="arbitrary"
+           minGapLat="0.05"
+           
+           lcPushy="1.0"
+           lcAssertive="1.0"
+           lcImpatience="1.0"
+           lcTimeToImpatience="2"
+           
+           lcSpeedGain="1000"
+           lcAccelLat="3.0"
+           
+           lcOvertakeRight="0.05"
+    />
+
+    <route id="route_moto_di" edges="E0" />
+    <flow id="flow_moto_di" type="ninja_lead" route="route_moto_di" begin="0" end="300" period="0.5" departLane="best"/>
+
+    <route id="route_moto_ve" edges="-E0" />
+    <flow id="flow_moto_ve" type="ninja_lead" route="route_moto_ve" begin="0" end="300" period="0.5" departLane="best"/>
+</routes>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-10 20:13:11 by Eclipse SUMO netedit Version 1.22.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="C:\Users\MSI-PC\Sumo\testbekeyley\test.sumocfg"/>
+        <sumo-net-file value="C:\Users\MSI-PC\Sumo\testbekeyley\test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\MSI-PC\Sumo\testbekeyley\test.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <new-network value="false"/>
+    </netedit>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,600.00,0.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+
+    <edge id="-E0" from="J3" to="J2" priority="-1">
+        <lane id="-E0_0" index="0" speed="13.89" length="600.00" width="3.50" shape="600.00,15.75 0.00,15.75"/>
+        <lane id="-E0_1" index="1" speed="13.89" length="600.00" width="3.50" shape="600.00,12.25 0.00,12.25"/>
+        <lane id="-E0_2" index="2" speed="13.89" length="600.00" width="3.50" shape="600.00,8.75 0.00,8.75"/>
+        <lane id="-E0_3" index="3" speed="13.89" length="600.00" width="3.50" shape="600.00,5.25 0.00,5.25"/>
+        <lane id="-E0_4" index="4" speed="13.89" length="600.00" width="3.50" shape="600.00,1.75 0.00,1.75"/>
+    </edge>
+    <edge id="E0" from="J2" to="J3" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="600.00" width="3.50" shape="0.00,-15.75 600.00,-15.75"/>
+        <lane id="E0_1" index="1" speed="13.89" length="600.00" width="3.50" shape="0.00,-12.25 600.00,-12.25"/>
+        <lane id="E0_2" index="2" speed="13.89" length="600.00" width="3.50" shape="0.00,-8.75 600.00,-8.75"/>
+        <lane id="E0_3" index="3" speed="13.89" length="600.00" width="3.50" shape="0.00,-5.25 600.00,-5.25"/>
+        <lane id="E0_4" index="4" speed="13.89" length="600.00" width="3.50" shape="0.00,-1.75 600.00,-1.75"/>
+    </edge>
+
+    <junction id="J2" type="dead_end" x="0.00" y="0.00" incLanes="-E0_0 -E0_1 -E0_2 -E0_3 -E0_4" intLanes="" shape="0.00,0.00 0.00,17.50 0.00,0.00"/>
+    <junction id="J3" type="dead_end" x="600.00" y="0.00" incLanes="E0_0 E0_1 E0_2 E0_3 E0_4" intLanes="" shape="600.00,0.00 600.00,-17.50 600.00,0.00"/>
+
+</net>

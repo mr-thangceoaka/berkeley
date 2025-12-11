@@ -1,0 +1,21 @@
+<routes>
+    <vType id="car_hanoi" length="5.0" width="3.0" maxSpeed="50.0" 
+           vClass="passenger" guiShape="passenger" color="yellow"
+           
+           latAlignment="center"
+           minGapLat="0.1"
+           
+           lcPushy="0.5"
+           lcAssertive="0.5"
+           lcImpatience="0.5"
+           lcTimeToImpatience="10"
+           
+           lcOvertakeRight="0"
+    />
+
+    <route id="route_car_di" edges="E0" />
+    <flow id="flow_car_di" type="car_hanoi" route="route_car_di" begin="0" end="300" period="2.0" departLane="best"/>
+
+    <route id="route_car_ve" edges="-E0" />
+    <flow id="flow_car_ve" type="car_hanoi" route="route_car_ve" begin="0" end="300" period="2.0" departLane="best"/>
+</routes>
